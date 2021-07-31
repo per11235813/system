@@ -11,6 +11,7 @@
 * vscode
 * docker
 
+
 # data og customisering
 * git 
   git config --global user.email "per11235813@gmail.com"
