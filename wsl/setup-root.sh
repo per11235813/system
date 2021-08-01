@@ -4,6 +4,7 @@ apt autoremove
 apt install -y gcc build-essential zlib1g-dev libncurses5-dev libgdbm-dev libnss3-dev libssl-dev libsnappy-dev libreadline-dev libffi-dev curl
 apt install -y unixodbc-dev
 apt install -y python3-venv python-setuptools python3-dev python3-pip python3-wheel 
+apt install -y inxi # system info
 
 curl https://packages.microsoft.com/keys/microsoft.asc | apt-key add -
 curl https://packages.microsoft.com/config/ubuntu/20.04/prod.list > /etc/apt/sources.list.d/mssql-release.list
@@ -19,6 +20,7 @@ add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(
 apt update
 apt-get install -y docker-ce
 
+# export TZ=Europe/Copenhagen && apt-get install -y tzdata
 
 curl -fsSL https://deb.nodesource.com/setup_14.x | sudo -E bash -
 apt-get install -y nodejs
